@@ -3,7 +3,6 @@ require 'pago'
 
 class Order < ApplicationRecord
   include ActiveModel::Serializers::Xml
-
   enum pay_type: {
     "Check" => 0,
     "Credit card" => 1,
